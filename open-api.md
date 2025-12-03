@@ -317,8 +317,8 @@ nexaauth://order?orderNo=T1991048326502010882&paySign=0076fa6482c2f17b240405381e
     "withdrawalNo": "提现单号",
     "amount": "提现金额",
     "currency": "货币类型",
-    "status": "提现状态",
-    "userId": "用户ID",
+    "status": "提现状态 PENDING/SUCCESS/FAILED",
+    "openid": "用户在此合作伙伴的唯一标识",
     "createTime": "创建时间"
   }
 }
