@@ -218,6 +218,7 @@ nexaauth://oauth/authorize?apikey=NEXA1925092532172697601&redirect_uri=https://n
 {
   "apiKey": "第三方应用的API Key",
   "orderNo": "合作伙伴订单号，确保唯一性",
+  "openid": "用户在此合作伙伴的唯一标识",
   "amount": "支付金额，单位为元，保留两位小数",
   "currency": "货币类型，默认USDT",
   "callbackUrl": "支付结果页面回调地址",
