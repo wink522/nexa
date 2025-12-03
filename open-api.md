@@ -298,7 +298,7 @@ nexaauth://order?orderNo=T1991048326502010882&paySign=0076fa6482c2f17b240405381e
   "apiKey": "第三方应用的API Key",
   "amount": "提现金额，单位为元",
   "currency": "货币类型，如：USDT",
-  "userId": "用户ID",
+  "openid": "用户在此合作伙伴的唯一标识",
   "notifyUrl": "提现结果通知地址",
   "remark": "提现备注说明（可选）",
   "timestamp": "当前时间戳，毫秒级",
@@ -351,7 +351,7 @@ nexaauth://order?orderNo=T1991048326502010882&paySign=0076fa6482c2f17b240405381e
     "amount": "提现金额",
     "currency": "货币类型",
     "status": "提现状态",
-    "userId": "用户ID",
+    "openid": "用户在此合作伙伴的唯一标识",
     "createTime": "创建时间",
     "completeTime": "完成时间",
     "remark": "备注信息"
