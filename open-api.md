@@ -199,7 +199,6 @@ nexaauth://oauth/authorize?apikey=NEXA1925092532172697601&redirect_uri=https://n
   "code": "0",
   "message": "success",
   "data": {
-    "user_id": "用户唯一标识",
     "nickname": "用户昵称",
     "avatar": "头像URL",
     "openid": "用户在此合作伙伴的唯一标识",
