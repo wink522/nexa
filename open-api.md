@@ -295,8 +295,9 @@ nexaauth://order?orderNo=T1991048326502010882&paySign=0076fa6482c2f17b240405381e
 
 ```json
 {
+  "orderNo": "合作伙伴提现订单号"
   "apiKey": "第三方应用的API Key",
-  "amount": "提现金额，单位为元",
+  "amount": "提现金额，单位USDT",
   "currency": "货币类型，如：USDT",
   "openid": "用户在此合作伙伴的唯一标识",
   "notifyUrl": "提现结果通知地址",
@@ -314,12 +315,12 @@ nexaauth://order?orderNo=T1991048326502010882&paySign=0076fa6482c2f17b240405381e
   "code": "0",
   "message": "success",
   "data": {
-    "withdrawalNo": "提现单号",
     "amount": "提现金额",
     "currency": "货币类型",
     "status": "提现状态 PENDING/SUCCESS/FAILED",
     "openid": "用户在此合作伙伴的唯一标识",
     "createTime": "创建时间"
+    "orderNo": "合作伙伴提现订单号"
   }
 }
 ```
@@ -333,7 +334,7 @@ nexaauth://order?orderNo=T1991048326502010882&paySign=0076fa6482c2f17b240405381e
 ```json
 {
   "apiKey": "第三方应用的API Key",
-  "withdrawalNo": "提现单号",
+  "orderNo": "提现单号",
   "timestamp": "当前时间戳，毫秒级",
   "nonce": "随机字符串，防重放",
   "signature": "签名，详见签名规则"
@@ -347,14 +348,12 @@ nexaauth://order?orderNo=T1991048326502010882&paySign=0076fa6482c2f17b240405381e
   "code": "0",
   "message": "success",
   "data": {
-    "withdrawalNo": "提现单号",
     "amount": "提现金额",
     "currency": "货币类型",
-    "status": "提现状态",
+    "status": "提现状态 PENDING/SUCCESS/FAILED",
     "openid": "用户在此合作伙伴的唯一标识",
-    "createTime": "创建时间",
-    "completeTime": "完成时间",
-    "remark": "备注信息"
+    "createTime": "创建时间"
+    "orderNo": "合作伙伴提现订单号"
   }
 }
 ```
