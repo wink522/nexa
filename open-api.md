@@ -216,7 +216,7 @@ nexaauth://oauth/authorize?apikey=NEXA1925092532172697601&redirect_uri=https://n
 ```json
 {
   "apiKey": "第三方应用的API Key",
-  "orderNo": "合作伙伴订单号，确保唯一性",
+  "orderNo": "合作伙伴订单号，确保唯一性", 不参与签名
   "openid": "用户在此合作伙伴的唯一标识",
   "amount": "支付金额，单位为元，保留两位小数",
   "sessionKey": "会话密钥",
@@ -295,7 +295,7 @@ nexaauth://order?orderNo=T1991048326502010882&paySign=0076fa6482c2f17b240405381e
 
 ```json
 {
-  "orderNo": "合作伙伴提现订单号"
+  "orderNo": "合作伙伴提现订单号" //不参与签名
   "apiKey": "第三方应用的API Key",
   "amount": "提现金额，单位USDT",
   "currency": "货币类型，如：USDT",
