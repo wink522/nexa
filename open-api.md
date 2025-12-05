@@ -635,14 +635,17 @@ public class PartnerApiClient {
     // 创建支付订单
     public String createPaymentOrder(PaymentOrderRequest request) {
         Map<String, String> params = new HashMap<>();
-        params.put("apiKey", apiKey);
-        params.put("amount", request.getAmount());
-        params.put("currency", request.getCurrency());
-        params.put("orderNo", request.getOrderNo());
-        params.put("notifyUrl", request.getNotifyUrl());
-        params.put("returnUrl", request.getReturnUrl());
-        params.put("timestamp", String.valueOf(System.currentTimeMillis()));
-        params.put("nonce", generateNonce());
+        params.put("apiKey", this.apiKey);
+        params.put("sessionKey", this.sessionKey);
+        params.put("amount", this.amount);
+        params.put("currency", this.currency);
+        params.put("subject", this.subject);
+        params.put("body", this.body);
+        params.put("openid", this.openid);
+        params.put("returnUrl", this.returnUrl);
+        params.put("notifyUrl", this.notifyUrl);
+        params.put("timestamp", this.timestamp);
+        params.put("nonce", this.nonce);
 
         // 生成签名
         String signature = SignatureUtil.generateSignature(params, appSecret);
